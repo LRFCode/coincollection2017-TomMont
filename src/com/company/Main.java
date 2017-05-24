@@ -6,13 +6,13 @@ public class Main
     //Create classes
     //Add constructors to classes
     //Add variables to classes
-    //Add functions to classes
+    //Add methods to classes
     //Use BigDecimal class
     //Use ArrayList class
 
     //The code below has been written to exercise code the you will write
     //You can comment out any code you want to test your partial code but
-    //be sure to put it back to complete this exercise
+    //be sure to put it back to complete this lab
     //If you want to add any extra code to this class please put it below
     //the comment at the end of main()
 
@@ -29,15 +29,15 @@ public class Main
         //TODO As you create each coin, keep track of it at the instance level in the CoinCollection class (Hint: use an ArrayList per coin denomination)
         //TODO Add addPenny, addNickel, addDime, and addQuarter functions to the CoinCollection class accepting a year as an int as input
         //TODO In the addPenny, addNickel, addDime, and addQuarter functions, create the appropriate coin and keep track of it along with the already created coins
-        //TODO In each coin class create a getFaceValue() function that returns a BigDecimal representation of the coin's face value
-        //TODO In each coin class create a getCollectibleValue() function that returns a BigDecimal representation of the coin's collectible value
+        //TODO In each coin class create a getFaceValue() function that returns a BigDecimal representation of the coin's face value (Hint: remember that the face value for a given denomination is the same for all coins)
+        //TODO In each coin class create a getCollectibleValue() function that returns a BigDecimal representation of the coin's collectible value (Hint: remember that the collectible value for coins can vary within a denomination)
         //TODO The collectible value for a coin should be based on the following:
         //TODO Penny:  Face Value + (0.03 * (Number of Years Older than 1945))
         //TODO Nickel: Face Value + (0.10 * (Number of Years Older than 1935))
         //TODO Dime:   Face Value
-        //TODO Nickel: Face Value + (0.22 * (Number of Years Older than 1923))
-        //TODO In the CoinCollection create a getFaceValue() function that returns a BigDecimal representation of the total face value of all coins in the collection
-        //TODO In the CoinCollection create a getCollectibleValue() function that returns a BigDecimal representation of the total collectible value of all coins in the collection
+        //TODO Quarter: Face Value + (0.22 * (Number of Years Older than 1923))
+        //TODO In the CoinCollection create a getFaceValue() method that returns a BigDecimal representation of the total face value of all coins in the collection
+        //TODO In the CoinCollection create a getCollectibleValue() method that returns a BigDecimal representation of the total collectible value of all coins in the collection
 
         System.out.println("Welcome to the ultimate coin collection program!");
         System.out.println("First we will create a default coin collection with some exciting coins.");
@@ -103,15 +103,16 @@ public class Main
         //Add support for Paper Currency to your CoinCollection class
         //Support 1,5,10,20, and 100 dollar bills but do not worry about adding default counts to the constructor of CoinCollection
         //Make the constructor of the paper currency types also take an int serial number
-        //Add functions to CoinCollection that return true or false if a bill already exists given a serial number
+        //Add methods to CoinCollection that return true or false if a bill already exists given a serial number
 
         //GOLD
         //Throw an exception and if someone tries to add a bill with the same serial number as any other bill in the same denomination
         //Make a second constructor on CoinCollection take takes a BigDecimal amount and populates
         //the collection with the fewest possible currency instances needed to add up to that amount
         //For example $123.12 would result in 1 of $100, 1 of $20, 3 of $1, 1 of Dime, and 2 of Penny
+        //Create JUnit tests to prove your code meets the requirements above
 
-        //TODO Put any extra testing code you want after this line
+        //TODO Put any extra testing code you want after this line or add unit
         System.out.println("My Testing Code Starts Here");
     }
 }
