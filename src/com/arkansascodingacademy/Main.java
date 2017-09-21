@@ -48,7 +48,7 @@ public class Main
         final int pennyCount = 2;
 
         //This invokes the CoinCollection constructor
-        /*CoinCollection coinCollection = new CoinCollection(quarterCount, dimeCount, nickelCount, pennyCount);
+        CoinCollection coinCollection = new CoinCollection(quarterCount, dimeCount, nickelCount, pennyCount);
 
         System.out.println("Let's take a look at the value of your new coin collection.");
         System.out.println();
@@ -98,8 +98,12 @@ public class Main
 
         System.out.println("Pennies have total face value of " + coinCollection.getPenniesFaceValue());
         System.out.println("Pennies have total collectible value of " + coinCollection.getPenniesCollectibleValue());
+    }
+}
 
-        */
+
+
+        /*
         //SILVER
         //Add support for Paper Currency to your CoinCollection class
         //Support 1,5,10,20, and 100 dollar bills but do not worry about adding default counts to the constructor of CoinCollection
